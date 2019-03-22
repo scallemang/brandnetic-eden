@@ -2,8 +2,14 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: #40c0c0,
+  secondary: #b0dfe1,
+  dark: #003c5b
 );
+
+$font-family-sans-serif: "Barlow", sans-serif;
+$font-family-serif: "Playfair Display", serif;
+$font-family-condensed: "Barlow Condensed", sans-serif;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;

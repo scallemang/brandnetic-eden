@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/echo",
+  "publicPath": "/wp-content/themes/eden",
   "devUrl": "http://eden.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
