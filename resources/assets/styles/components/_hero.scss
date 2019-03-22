@@ -1,0 +1,15 @@
+section.page-hero {
+  @include media-breakpoint-up(lg) {
+    .hero__copy {
+      float: left;
+      width: 100%;
+      // position: absolute;
+      transform: translateY(-50%);
+
+      > [class*="col"] {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}

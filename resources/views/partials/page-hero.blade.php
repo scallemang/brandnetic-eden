@@ -11,14 +11,20 @@
         @endif
       </div>
     </div>
-    <div class="row bg-primary">
-      <div class="col-sm-6">
-        @if( get_field( 'hero__copy' ) ){!! get_field( 'hero__copy' ) !!}@endif
+  </div>
+  <div class="bg-secondary ">
+    <div class="container clearfix">
+      <div class="row hero__copy">
+        <div class="col-sm-6 bg-primary">
+          @if( get_field( 'hero__copy' ) ){!! get_field( 'hero__copy' ) !!}@endif
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        @if( get_field( 'hero__subtitle' ) )<h3>{{ get_field( 'hero__subtitle' ) }}</h3>@endif
+    <div class="container">
+      <div class="row bg-secondary">
+        <div class="col-sm-12 text-center">
+          @if( get_field( 'hero__subtitle' ) )<h3>{{ get_field( 'hero__subtitle' ) }}</h3>@endif
+        </div>
       </div>
     </div>
   </div>

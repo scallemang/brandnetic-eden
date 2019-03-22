@@ -1,11 +1,17 @@
 // body {
 //   background: url("../images/eden_identity_pattern.jpg");
 // }
-
-.bg-primary {
-  background-color: map-get($theme-colors, primary);
-
+.bg-primary,
+.bg-secondary {
   * {
     color: $white;
   }
+}
+
+.bg-primary {
+  background-color: map-get($theme-colors, primary);
+}
+
+.bg-secondary {
+  background-color: map-get($theme-colors, secondary);
 }
