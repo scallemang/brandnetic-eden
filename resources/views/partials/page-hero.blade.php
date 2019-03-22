@@ -11,7 +11,7 @@
         @endif
       </div>
     </div>
-    <div class="row">
+    <div class="row bg-primary">
       <div class="col-sm-6">
         @if( get_field( 'hero__copy' ) ){!! get_field( 'hero__copy' ) !!}@endif
       </div>
