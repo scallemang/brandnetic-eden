@@ -15,3 +15,8 @@
 .bg-secondary {
   background-color: map-get($theme-colors, secondary);
 }
+
+.bg-floral {
+  background: url("../images/pattern__floral--crop.svg");
+  background-size: cover;
+}

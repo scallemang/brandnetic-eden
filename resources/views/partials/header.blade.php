@@ -12,6 +12,7 @@
 			<img src="{{ $image['sizes']['large'] }}" alt="{{ $image['alt'] }}" class="img-fluid site-logo">
 		</div></a>
       @endif
+      <button type="button" class="btn btn-outline-primary">Register</button>
     </nav>
   </div>
 </header>

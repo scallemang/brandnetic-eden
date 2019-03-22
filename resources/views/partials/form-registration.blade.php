@@ -8,7 +8,7 @@
   </div>
 </article>
  --}}
-<form class="registration">
+<form class="registration bg-floral">
   <div class="container">
     <h2>Register your interest</h2>
     <div class="form-row">
