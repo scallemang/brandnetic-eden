@@ -10,5 +10,6 @@
     @include('partials.page-hero')
     @include('partials.content-page')
     @include('partials.form-registration')
+    @include('partials.map')
   @endwhile
 @endsection

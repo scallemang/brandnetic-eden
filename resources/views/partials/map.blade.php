@@ -1,0 +1,1 @@
+<img src="@asset('images/google_map_location_static.jpg')" class="img-fluid">
