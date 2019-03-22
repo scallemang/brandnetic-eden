@@ -4,7 +4,8 @@ section.page-hero {
       float: left;
       width: 100%;
       // position: absolute;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
+      margin-top: -100px;
 
       > [class*="col"] {
         position: relative;
