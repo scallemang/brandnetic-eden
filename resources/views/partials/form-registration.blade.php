@@ -8,33 +8,55 @@
   </div>
 </article>
  --}}
+<script>
+var register = function(jQuery) {
+  jQuery.ajax({
+    type: "POST",
+    url: 'partials/lasso/signup.php',
+    data: {
+      firstName: document.getElementById('first_name').value,
+      lastName: document.getElementById('last_name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      //address: document.getElementById('address').value,
+      city: document.getElementById('city').value,
+      //province: document.getElementById('province').value,
+      //postal: document.getElementById('postal').value,
+      //country: document.getElementById('country').value
+    },
+    success: function(arguments){
+      console.log(arguments);
+    }
+  });
+};
+</script>
 <form class="registration bg-floral">
   <div class="container">
     <h2>Register your interest</h2>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputFname">First Name*</label>
-        <input type="text" class="form-control" id="inputFname" placeholder="">
+        <label for="first_name">First Name*</label>
+        <input type="text" class="form-control" id="first_name" placeholder="">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputLname">Last Name*</label>
-        <input type="text" class="form-control" id="inputLname" placeholder="">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email*</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPhone">Phone Number*</label>
-        <input type="tel" class="form-control" id="inputPhone" placeholder="">
+        <label for="last_name">Last Name*</label>
+        <input type="text" class="form-control" id="last_name" placeholder="">
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity" placeholder="">
+        <label for="email">Email*</label>
+        <input type="email" class="form-control" id="email" placeholder="">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" class="form-control" id="phone" placeholder="">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cith">City</label>
+        <input type="text" class="form-control" id="city" placeholder="">
       </div>
     </div>
     <div class="form-row">
@@ -108,6 +130,7 @@
         {{-- <div class="invalid-feedback">Example invalid feedback text</div> --}}
       </div>
     </div>
+    <div class="g-recaptcha" data-sitekey="6LfEapkUAAAAAFn3dEfJ9Ywnzr85qVFTSwDwe4i3"></div>
     <button type="submit" class="btn btn-primary">Sign in</button>
   </div>
 </form>
