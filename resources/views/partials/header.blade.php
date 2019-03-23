@@ -6,13 +6,14 @@
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
+      <button type="button" class="btn btn-outline-primary px-4">Menu</button>
       @if( get_field( 'site__logo', 'option' ) ) 
 		@php $image = get_field( 'site__logo', 'option' ); @endphp
 		<a class="navbar-brand mx-auto" href="#"><div id="logo">
 			<img src="{{ $image['sizes']['large'] }}" alt="{{ $image['alt'] }}" class="img-fluid site-logo">
 		</div></a>
       @endif
-      <button type="button" class="btn btn-outline-primary">Register</button>
+      <button type="button" class="btn btn-outline-primary px-4">Register</button>
     </nav>
   </div>
 </header>

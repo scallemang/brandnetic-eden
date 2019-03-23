@@ -1,11 +1,11 @@
 section.page-hero {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     .hero__copy {
       float: left;
       width: 100%;
       // position: absolute;
       //transform: translateY(-50%);
-      margin-top: -100px;
+      margin-top: -200px;
 
       > [class*="col"] {
         position: relative;
