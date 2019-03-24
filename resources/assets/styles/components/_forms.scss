@@ -38,7 +38,9 @@ $border-color: #afe2e3;
   }
 }
 
-form.registration {
+div.registration,
+form.registration,
+div.registration form {
   .custom-select {
     border-color: $border-color;
     border-radius: 0;
