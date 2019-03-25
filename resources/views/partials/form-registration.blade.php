@@ -34,10 +34,11 @@ var register = function(jQuery) {
   <div class="container container-fluid-md-down bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-10 offset-md-1 px-4 py-5">
+        <div class="col-sm-12 col-md-10 offset-md-1 px-2 py-5">
           <div class="row">
             <div class="col-md-8 col-lg-12">
               @if( get_field( 'registration__form_header' ) )<h2 class="eden-display-1 pb-4">{{ get_field( 'registration__form_header' ) }}</h2>@endif
+              <p class="color-primary"><strong>Fields Required*</strong></p>
             </div>
           </div>
           @if( get_field( 'registration__cf7_shortcode') )@php print do_shortcode( get_field( 'registration__cf7_shortcode' ) ); @endphp@endif
