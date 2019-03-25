@@ -11,6 +11,10 @@ $font-family-sans-serif: "Barlow", sans-serif;
 $font-family-serif: "Playfair Display", serif;
 $font-family-condensed: "Barlow Condensed", sans-serif;
 
+.btn {
+  font-family: $font-family-condensed;
+}
+
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;

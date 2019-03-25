@@ -1,7 +1,11 @@
-.btn,
-.comment-form input[type="submit"],
-.search-form .search-submit {
+body .btn,
+body .comment-form input[type="submit"],
+body .search-form .search-submit {
   border-radius: 0;
   text-transform: uppercase;
-  font: $font-family-condensed;
+  font: $font-family-condensed !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 10px 42px;
+  margin-right: 42px;
 }

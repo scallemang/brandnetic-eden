@@ -14,6 +14,10 @@
 
 .bg-secondary {
   background-color: map-get($theme-colors, secondary);
+
+  * {
+    color: map-get($theme-colors, dark);
+  }
 }
 
 .bg-white {
@@ -23,6 +27,10 @@
 .bg-floral {
   background: url("../images/pattern__floral--crop.svg");
   background-size: cover;
+}
+
+.col-padded-xl {
+  padding: 4rem 5.2rem !important;
 }
 
 @include media-breakpoint-down(md) {
@@ -51,6 +59,16 @@ p.eden-copy-1,
 div.eden-copy-1 p {
   font-size: 21px;
   line-height: 30px;
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.row-cta {
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
 }
 
 .t-uppercase {

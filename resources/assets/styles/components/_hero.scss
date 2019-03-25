@@ -13,4 +13,11 @@ section.page-hero {
       }
     }
   }
+
+  @include media-breakpoint-down(md) {
+    .col-md-6 {
+      flex: 0 0 51%;
+      max-width: 51%;
+    }
+  }
 }

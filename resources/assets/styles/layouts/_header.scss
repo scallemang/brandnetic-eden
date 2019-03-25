@@ -1,9 +1,13 @@
 header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   box-shadow: 0 0 34px -14px black;
   position: relative;
   z-index: 1;
+
+  .bg-floral {
+    padding-top: 72px !important;
+  }
 }
 
 .banner .nav li {
