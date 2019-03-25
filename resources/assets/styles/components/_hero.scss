@@ -1,16 +1,22 @@
 section.page-hero {
-  @include media-breakpoint-up(xl) {
+  @media (min-width: 769px) {
     .hero__copy {
       float: left;
       width: 100%;
       // position: absolute;
       //transform: translateY(-50%);
-      margin-top: -200px;
+      margin-top: -120px;
 
       > [class*="col"] {
         position: relative;
         z-index: 1;
       }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .hero__copy {
+      margin-top: -240px;
     }
   }
 

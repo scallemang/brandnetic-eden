@@ -21,7 +21,7 @@ $border-color: #afe2e3;
 }
 
 .custom-checkbox {
-  padding-left: 3rem;
+  padding-left: 2.6rem;
 }
 
 .custom-control-label {
@@ -30,9 +30,9 @@ $border-color: #afe2e3;
   &::before,
   &::after {
     //top: 0.8rem;
-    left: -3rem;
-    width: 2rem;
-    height: 2rem;
+    left: -2.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 0 !important;
     border-color: $border-color;
   }
@@ -45,6 +45,12 @@ div.registration form {
     border-color: $border-color;
     border-radius: 0;
     color: map-get($theme-colors, dark);
+  }
+
+  label.fine-print {
+    font-size: 13px;
+    line-height: 19px;
+    font-family: $font-family-condensed;
   }
 
   .form-row {

@@ -13,6 +13,14 @@ $font-family-condensed: "Barlow Condensed", sans-serif;
 
 .btn {
   font-family: $font-family-condensed;
+
+  &.btn-primary {
+    color: white;
+  }
+}
+
+.t-condensed {
+  font-family: $font-family-condensed !important;
 }
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */

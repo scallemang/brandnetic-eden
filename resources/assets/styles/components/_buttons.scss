@@ -8,4 +8,9 @@ body .search-form .search-submit {
   font-size: 1.25rem;
   padding: 10px 42px;
   margin-right: 42px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.1rem;
+    padding: 6px 26px;
+  }
 }
