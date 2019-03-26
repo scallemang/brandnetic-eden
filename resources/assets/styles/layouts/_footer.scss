@@ -4,9 +4,14 @@ footer {
   padding: 78px 44px 234px;
 
   .v-line {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    margin: 10px 0;
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      margin: 10px 0;
+    }
   }
 
   h4 {

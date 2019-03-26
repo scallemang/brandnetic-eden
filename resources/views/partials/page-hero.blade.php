@@ -27,7 +27,7 @@
     <div class="container">
       <div class="row bg-secondary row-cta">
         <div class="col-sm-12 text-center">
-          @if( get_field( 'hero__subtitle' ) )<p class="eden-copy-lg t-uppercase"><strong>{{ get_field( 'hero__subtitle' ) }}</strong></p>@endif
+          @if( get_field( 'hero__subtitle' ) )<p class="eden-copy-lg t-uppercase"><strong>{!! get_field( 'hero__subtitle' ) !!}</strong></p>@endif
         </div>
       </div>
     </div>

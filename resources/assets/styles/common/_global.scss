@@ -134,6 +134,12 @@ div.eden-copy-sm p {
   padding-left: 15px;
   padding-right: 15px;
 
+  &.col-eden-md-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   @include media-breakpoint-up(md) {
     &.col-eden-md-6 {
       -webkit-box-flex: 0;
