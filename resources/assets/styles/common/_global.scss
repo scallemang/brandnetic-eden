@@ -1,6 +1,14 @@
 // body {
 //   background: url("../images/eden_identity_pattern.jpg");
 // }
+body {
+  position: relative;
+
+  &.no-scroll {
+    overflow: hidden !important;
+  }
+}
+
 .bg-primary,
 .bg-secondary {
   * {
@@ -39,11 +47,15 @@
 }
 
 .col-padded-xl {
-  padding: 4rem 5.2rem !important;
+  padding: 2rem 1.2rem !important;
 
   @include media-breakpoint-up(lg) {
-    padding: 2.5rem 1.5rem !important;
+    padding: 4rem 5.2rem !important;
   }
+
+  // @include media-breakpoint-up(lg) {
+  //   padding: 2.5rem 1.5rem !important;
+  // }
 }
 
 @include media-breakpoint-down(md) {
@@ -66,26 +78,46 @@ h3.eden-display-1 {
     line-height: 72px;
   }
 
-  @include media-breakpoint-up(lg) {
-    font-size: 46px;
-    line-height: 58px;
-  }
+  // @include media-breakpoint-up(lg) {
+  //   font-size: 46px;
+  //   line-height: 58px;
+  // }
 }
 
-.eden-copy-1,
-p.eden-copy-1,
-div.eden-copy-1 p {
+.eden-copy-sm,
+p.eden-copy-sm,
+div.eden-copy-sm p {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 2rem;
 
+  // @include media-breakpoint-up(lg) {
+  //   font-size: 16px;
+  //   line-height: 20px;
+  // }
+}
+
+.eden-copy-lg,
+p.eden-copy-lg,
+div.eden-copy-lg p {
+  font-size: 36px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+
+  // @include media-breakpoint-up(lg) {
+  //   font-size: 36px;
+  //   line-height: 30px;
+  // }
+}
+
+.eden-copy-lg,
+p.eden-copy-lg,
+div.eden-copy-lg p,
+.eden-copy-sm,
+p.eden-copy-sm,
+div.eden-copy-sm p {
   &:last-of-type {
     margin-bottom: 0;
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: 16px;
-    line-height: 20px;
   }
 }
 
@@ -121,8 +153,18 @@ div.eden-copy-1 p {
   }
 }
 
-@include media-breakpoint-up(lg) {
-  .container {
-    max-width: 988px !important;
+// @include media-breakpoint-up(lg) {
+//   .container {
+//     max-width: 988px !important;
+//   }
+// }
+
+.px-sm-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }

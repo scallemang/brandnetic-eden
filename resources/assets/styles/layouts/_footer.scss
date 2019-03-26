@@ -1,7 +1,7 @@
 footer {
   background-color: map-get($theme-colors, dark);
   color: $white;
-  padding: 78px 44px;
+  padding: 78px 44px 234px;
 
   .v-line {
     border-left: 1px solid white;
@@ -17,8 +17,13 @@ footer {
   }
 
   p {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 26px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+      line-height: 36px;
+    }
   }
 
   [class*=""] {
@@ -42,6 +47,7 @@ footer {
       padding-left: 0;
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -61,6 +67,7 @@ footer {
     ul {
       display: flex;
       align-items: center;
+      margin-bottom: 43px;
 
       li {
         img {

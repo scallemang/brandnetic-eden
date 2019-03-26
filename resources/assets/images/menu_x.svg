@@ -3,11 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 300 144" style="enable-background:new 0 0 300 144;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#48C1C4;}
+	.st0{fill:#FFFFFF;}
 </style>
-<g>
-	<rect x="5.38" y="-0.62" class="st0" width="289.41" height="5.8"/>
-	<rect x="5.38" y="68.83" class="st0" width="289.41" height="5.8"/>
-	<rect x="5.38" y="138.29" class="st0" width="289.41" height="5.8"/>
-</g>
+<rect x="148.98" y="-27.82" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6901 127.8487)" class="st0" width="4" height="199.64"/>
+<rect x="51.16" y="70" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6901 127.8487)" class="st0" width="199.64" height="4"/>
 </svg>

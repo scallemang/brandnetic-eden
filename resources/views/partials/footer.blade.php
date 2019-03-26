@@ -33,6 +33,8 @@
             <li><a href="https://instagram.com" target="_blank"><img src="@asset('images/Asset_3eden_logo.png')" alt="Instagram logo"></a></li>
           </ul>
         </div>
+        <p>© Fortune Marketing {{ get_the_date('Y') }}<br>
+        All Rights Reserved</p>
       </div>
 		</div>
 	</div>

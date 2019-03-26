@@ -19,8 +19,10 @@
 		</div></a>
       @endif
       <div class="contact">
-        <button type="button" class="btn btn-outline-primary">Register</button>
-        <a class="tel t-condensed">250-317-9947</a>
+        <button type="button" class="btn btn-outline-primary d-none d-md-block">Register</button>
+        <a class="tel t-condensed d-none d-lg-block">250-317-9947</a>
+      </div>
     </nav>
   </div>
 </header>
+@include('partials.menu')

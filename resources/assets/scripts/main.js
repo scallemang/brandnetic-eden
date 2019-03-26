@@ -37,3 +37,43 @@ window.WebFontConfig = {
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
 })();
+
+(function($) {
+  $('.wpcf7-radio').each(function(){
+    $(this).find('.wpcf7-list-item').each(function(){
+      $(this).addClass('custom-control custom-radio').find('input').each(function(){
+        $(this).addClass('custom-control-input');
+      });
+    }).find('.wpcf7-list-item-label').each(function(){
+      $(this).addClass('custom-control-label')
+    });
+  });
+  $('.wpcf7-list-item').click(function(){
+    $(this).find('input').prop('checked', true);
+  });
+})(jQuery);
+
+(function($) {
+  document.addEventListener( 'wpcf7mailsent', function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $('div.registration').offset().top,
+    }, 500);
+    $('form.wpcf7-form').hide(500);
+    $('p.success-msg').show(500);
+  }, false );
+})(jQuery);
+
+(function($) {
+  $('.navbar-toggler').click(function(){
+    $('html, body').animate({ 
+      scrollTop: 0,
+    }, 100);
+    $('header.menu').fadeIn(350); 
+    $('body').addClass('no-scroll');
+  });
+
+  $('.menu-toggler').click(function(){
+    $('header.menu').fadeOut(350);
+    $('body').removeClass('no-scroll');
+  });
+})(jQuery);
