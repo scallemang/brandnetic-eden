@@ -23,7 +23,7 @@
   <div class="full-menu">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 menu-items">
           <ul>
             <li class="t-condensed t-uppercase"><a href="#">Register</a></li>
             <li class="t-condensed t-uppercase"><a href="#">Location</a></li>

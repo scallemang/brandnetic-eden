@@ -49,8 +49,10 @@ body {
 .col-padded-xl {
   padding: 2rem 1.2rem !important;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     padding: 4rem 5.2rem !important;
+    margin-left: calc(-5.2rem + 15px);
+    margin-right: calc(-5.2rem + 15px);
   }
 
   // @include media-breakpoint-up(lg) {
@@ -74,8 +76,10 @@ h3.eden-display-1 {
   line-height: 36px;
 
   @include media-breakpoint-up(md) {
-    font-size: 60px;
-    line-height: 72px;
+    // font-size: 60px;
+    // line-height: 72px;
+    font-size: 54px;
+    line-height: 64px;
   }
 
   // @include media-breakpoint-up(lg) {
@@ -87,8 +91,8 @@ h3.eden-display-1 {
 .eden-copy-sm,
 p.eden-copy-sm,
 div.eden-copy-sm p {
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 26px;
   margin-bottom: 2rem;
 
   // @include media-breakpoint-up(lg) {
