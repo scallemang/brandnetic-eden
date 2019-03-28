@@ -130,3 +130,5 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+add_image_size( 'landscape_hero_medium', 800, 400, TRUE );

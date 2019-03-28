@@ -8,7 +8,9 @@
         <div class="col-sm-12 col-lg-7 col-xl-8 px-sm-0">
           @if( get_field( 'hero__image' ) )
             @php $image = get_field( 'hero__image' ); @endphp
-            <img src="{{ $image['sizes']['large'] }}" alt="{{ $image['alt'] }}" class="img-fluid">
+            {{-- <pre>@php print_r( $image ); @endphp</pre> --}}
+            <img src="{{ $image['sizes']['landscape_hero_medium'] }}" alt="{{ $image['alt'] }}" class="img-fluid d-block d-lg-none">
+            <img src="{{ $image['sizes']['large'] }}" alt="{{ $image['alt'] }}" class="img-fluid d-none d-lg-block">
           @endif
         </div>
       </div>

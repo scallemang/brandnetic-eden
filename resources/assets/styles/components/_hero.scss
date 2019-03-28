@@ -1,5 +1,9 @@
 section.page-hero {
-  @media (min-width: 769px) {
+  img.d-lg-none {
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
     .hero__copy {
       float: left;
       width: 100%;
