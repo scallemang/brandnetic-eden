@@ -42,7 +42,7 @@ body {
 }
 
 .bg-floral {
-  background: url("../images/pattern__floral--crop.svg");
+  background: url("../images/pattern__floral--crop2.png");
   background-size: cover;
 }
 
@@ -104,14 +104,14 @@ div.eden-copy-sm p {
 .eden-copy-lg,
 p.eden-copy-lg,
 div.eden-copy-lg p {
-  font-size: 36px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 28px;
   margin-bottom: 2rem;
 
-  // @include media-breakpoint-up(lg) {
-  //   font-size: 36px;
-  //   line-height: 30px;
-  // }
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+    line-height: 30px;
+  }
 }
 
 .eden-copy-lg,

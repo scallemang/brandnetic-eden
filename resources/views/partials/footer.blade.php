@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info eden-copy-sm">
   <div class="container">
   	<div class="row">
   		<div class="col-md-11 offset-md-1 offset-lg-0 col-lg-8">

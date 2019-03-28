@@ -64,6 +64,14 @@ window.WebFontConfig = {
 })(jQuery);
 
 (function($) {
+  $('#button__register--header').click(function(){
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $('div.registration').offset().top,
+    }, 1000);
+  });
+})(jQuery);
+
+(function($) {
   $('.navbar-toggler').click(function(){
     $('html, body').animate({ 
       scrollTop: 0,
