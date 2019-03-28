@@ -82,6 +82,11 @@ h3.eden-display-1 {
     line-height: 64px;
   }
 
+  @media (min-width: 1800px) {
+    font-size: 64px;
+    line-height: 74px;
+  }
+
   // @include media-breakpoint-up(lg) {
   //   font-size: 46px;
   //   line-height: 58px;
