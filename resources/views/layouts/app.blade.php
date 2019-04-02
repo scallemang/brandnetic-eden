@@ -19,5 +19,16 @@
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
+    @if( get_field( 'settings__analytics', 'option' ) )
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ get_field('settings__analytics', 'option') }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', {{ get_field('settings__analytics', 'option') }});
+    </script>
+    @endif
   </body>
 </html>

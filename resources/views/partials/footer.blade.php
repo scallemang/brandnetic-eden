@@ -6,8 +6,8 @@
         <p class="t-uppercase mb-0">EDEN Property Specialists</p>
   			<div class="row">
           <div class="col-eden col-eden-md-6 col-eden-lg-4">
-            <p>250-317-9947<br>
-            eden@fortunemarketing.ca</p>
+            <p><a href="tel:250.317.7879">250-317-9947</a><br>
+            <a href="mailto:eden@fortunemarketing.ca">eden@fortunemarketing.ca</a></p>
           </div>
           <div class="v-line"></div>
           <div class="col-eden col-eden-md-6 col-eden-lg-4">
