@@ -86,10 +86,24 @@ h3.eden-display-1 {
     font-size: 64px;
     line-height: 74px;
   }
+}
 
-  // @include media-breakpoint-up(lg) {
-  //   font-size: 46px;
-  //   line-height: 58px;
+h1.eden-display-3,
+h2.eden-display-3,
+h3.eden-display-3 {
+  font-family: $font-family-serif;
+  color: map-get($theme-colors, dark);
+  // font-size: 30px;
+  // line-height: 36px;
+
+  // @include media-breakpoint-up(md) {
+  //   font-size: 54px;
+  //   line-height: 64px;
+  // }
+
+  // @media (min-width: 1800px) {
+  //   font-size: 64px;
+  //   line-height: 74px;
   // }
 }
 
