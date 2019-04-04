@@ -51,6 +51,22 @@ window.WebFontConfig = {
   $('.wpcf7-list-item').click(function(){
     $(this).find('input').prop('checked', true);
   });
+  $('.custom-checkbox').click(function(){
+    $(this).find('input').prop('checked', true);
+  });
+})(jQuery);
+
+(function($) {
+  if( 0 < $('.wpcf7-form').length && 0 < $('.wpcf7-submit').length  ) {
+    $('.wpcf7-form').on('submit', function(e) {
+      if ( false == $('.custom-checkbox').find('input').prop('checked') ) {
+        e.preventDefault();
+        $('.custom-checkbox').find('span').removeClass('d-none');
+      } else {
+        $('.custom-checkbox').find('span').addClass('d-none');
+      }
+    })
+  }
 })(jQuery);
 
 (function($) {
