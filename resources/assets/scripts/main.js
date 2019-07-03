@@ -52,7 +52,7 @@ window.WebFontConfig = {
     $(this).find('input').prop('checked', true);
   });
   $('.custom-checkbox').click(function(){
-    $(this).find('input').prop('checked', true);
+    $(this).toggleClass('custom-checkbox-active').find('input').prop('checked', true);
   });
 })(jQuery);
 

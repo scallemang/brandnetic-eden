@@ -27,7 +27,7 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', {{ get_field('settings__analytics', 'option') }});
+      gtag('config', '{{ get_field('settings__analytics', 'option') }}');
     </script>
     @endif
   </body>
