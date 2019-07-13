@@ -1,4 +1,84 @@
 footer {
   background-color: map-get($theme-colors, dark);
   color: $white;
+  padding: 78px 44px 234px;
+
+  .v-line {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      margin: 10px 0;
+    }
+  }
+
+  h4 {
+    font-size: 21px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  // p {
+  //   font-size: 16px;
+  //   line-height: 26px;
+
+  //   @include media-breakpoint-up(md) {
+  //     font-size: 22px;
+  //     line-height: 36px;
+  //   }
+  // }
+
+  [class*=""] {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .col-eden-md-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 48% !important;
+      flex: 0 0 48% !important;
+      max-width: 48% !important;
+    }
+  }
+
+  .partner-logos,
+  .social-icons {
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .social-icons {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 96px;
+    }
+
+    li {
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .partner-logos {
+    ul {
+      display: flex;
+      align-items: center;
+      margin-bottom: 43px;
+
+      li {
+        img {
+          margin-right: 38px;
+        }
+      }
+    }
+  }
 }

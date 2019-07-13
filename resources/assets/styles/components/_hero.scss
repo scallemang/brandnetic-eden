@@ -1,15 +1,51 @@
 section.page-hero {
+  img.d-lg-none {
+    width: 100%;
+  }
+
   @include media-breakpoint-up(lg) {
     .hero__copy {
       float: left;
       width: 100%;
       // position: absolute;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
+      margin-top: -120px;
 
       > [class*="col"] {
         position: relative;
         z-index: 1;
       }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .hero__copy {
+      margin-top: -60px;
+    }
+
+    .row-hero {
+      margin-right: -6vw;
+      margin-bottom: -8vh;
+      margin-top: -5vh;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .hero__copy {
+      margin-top: -140px;
+    }
+
+    .row-hero {
+      margin-right: -10vw;
+      margin-bottom: -15vh;
+      margin-top: -5vh;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .col-md-6 {
+      flex: 0 0 51%;
+      max-width: 51%;
     }
   }
 }

@@ -1,3 +1,5 @@
+$border-color: #afe2e3;
+
 /** Search form */
 .search-form {
   @extend .form-inline;
@@ -18,14 +20,109 @@
   @extend .btn-secondary;
 }
 
-.custom-control-label::before,
-.custom-control-label::after {
-  //top: 0.8rem;
-  width: 2rem;
-  height: 2rem;
+.custom-radio,
+.custom-checkbox {
+  .custom-control-label {
+    // padding-left: 3rem;
+    &::before,
+    &::after {
+      //top: 0.8rem;
+      border-color: $border-color;
+      border-width: 2px;
+    }
+  }
 }
 
-form.registration {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.success-msg {
+  display: none;
+}
+
+.custom-radio {
+  padding-left: 1.6rem;
+
+  .custom-control-label {
+    &::before,
+    &::after {
+      left: -1.6rem;
+    }
+  }
+}
+
+.custom-checkbox {
+  padding-left: 2.6rem;
+
+  .custom-control-label {
+    &::before,
+    &::after {
+      left: -2.6rem;
+      border-radius: 0 !important;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+.wpcf7-list-item:hover {
+  cursor: pointer;
+}
+
+span.wpcf7-list-item:first-of-type {
+  margin-left: 0;
+}
+
+div.registration,
+form.registration,
+div.registration form {
+  .custom-select {
+    border-color: $border-color;
+    border-width: 2px;
+    border-radius: 0;
+    color: map-get($theme-colors, dark);
+  }
+
+  label.fine-print {
+    font-size: 13px;
+    line-height: 19px;
+    font-family: $font-family-condensed;
+  }
+
+  .form-row {
+    .col-eden-6 {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: space-between;
+
+      .col-eden-6 {
+        width: 46%;
+      }
+    }
+  }
+
+  label,
+  legend {
+    font-size: 1rem;
+    color: map-get($theme-colors, dark);
+    // margin-bottom: 0.75rem;
+  }
+}
+
+.form-control,
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea,
+.search-form .search-field {
+  border-color: $border-color;
+  border-width: 2px;
+  border-radius: 0;
+  color: map-get($theme-colors, dark);
+  font-size: 1.5rem;
+
+  &:focus {
+    border-color: map-get($theme-colors, primary);
+    box-shadow: none;
+  }
 }
