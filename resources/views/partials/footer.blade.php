@@ -18,7 +18,7 @@
             <div class="social-icons">
               <ul>
                 @if( get_field( 'social__facebook', 'option' ) )<li><a href="{{ get_field( 'social__facebook', 'option' ) }}" target="_blank"><img src="@asset('images/Facebookeden_logo.png')" alt=" logo"></a></li>@endif
-                
+                @if( get_field( 'social__twitter', 'option' ) )<li><a href="{{ get_field( 'social__twitter', 'option' ) }}" target="_blank"><img src="@asset('images/Twittereden_logo.png')" alt=" logo"></a></li>@endif
                 @if( get_field( 'social__instagram', 'option' ) )<li><a href="{{ get_field( 'social__instagram', 'option' ) }}" target="_blank"><img src="@asset('images/Instagrameden_logo.png')" alt=" logo"></a></li>@endif
               </ul>
             </div>

@@ -41,7 +41,7 @@
             </div>
             <div class="col-xl-6">
               <p class="t-condensed t-uppercase">250-317-7879<br>
-              <a href="eden@fortunemarketing.ca">eden@fortunemarketing.ca</a></p>
+              <a href="edenkelowna@fortunemarketing.ca">edenkelowna@fortunemarketing.ca</a></p>
             </div>
           </div>
         </div>

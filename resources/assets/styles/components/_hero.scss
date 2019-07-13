@@ -3,6 +3,21 @@ section.page-hero {
     width: 100%;
   }
 
+  h1.eden-display-1 {
+    margin-bottom: 1.2rem;
+  }
+
+  .hero__copy {
+    h3 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 21px;
+      line-height: 24px;
+      font-weight: 700;
+      margin-bottom: 1.75rem;
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     .hero__copy {
       float: left;
