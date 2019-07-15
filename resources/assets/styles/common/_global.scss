@@ -10,9 +10,20 @@ body {
 }
 
 .bg-primary,
-.bg-secondary {
+.bg-secondary,
+.bg-dark {
   * {
     color: $white;
+  }
+
+  .btn-outline {
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
   }
 }
 
@@ -29,6 +40,14 @@ body {
   }
 }
 
+.bg-primary-light {
+  background-color: map-get($theme-colors, primary-light);
+
+  * {
+    color: map-get($theme-colors, dark);
+  }
+}
+
 .bg-secondary {
   background-color: map-get($theme-colors, secondary);
 
@@ -37,13 +56,19 @@ body {
   }
 }
 
+.bg-dark {
+  background-color: map-get($theme-colors, dark);
+}
+
 .bg-white {
   background-color: white !important;
 }
 
 .bg-floral {
   background: url("../images/pattern__floral--crop2.png");
-  background-size: cover;
+  // background-size: cover;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 .col-padded-xl {
@@ -67,6 +92,14 @@ body {
 }
 
 // Type
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-serif;
+  color: $dark;
+}
+
 h1.eden-display-1,
 h2.eden-display-1,
 h3.eden-display-1 {
@@ -196,4 +229,11 @@ div.eden-copy-sm p {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+}
+
+.hr-sm {
+  border-top: 1px solid map-get($theme-colors, "dark");
+  border-bottom: 1px solid map-get($theme-colors, "dark");
+  width: 205px;
+  margin: 2rem auto;
 }

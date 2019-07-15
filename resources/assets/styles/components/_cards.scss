@@ -1,0 +1,22 @@
+.card {
+  border: none;
+
+  @at-root {
+    [class*="col-"] > & {
+      height: 100%;
+    }
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 26px;
+    color: $dark;
+    font-weight: 700;
+    font-family: $font-family-sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: $dark;
+  }
+}

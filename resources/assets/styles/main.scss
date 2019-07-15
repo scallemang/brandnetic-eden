@@ -13,6 +13,7 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/sections";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -20,6 +21,8 @@
 // Eden custom components:
 @import "components/header";
 @import "components/hero";
+@import "components/cards";
+@import "components/blocks/*";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

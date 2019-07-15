@@ -3,9 +3,15 @@
 
 $theme-colors: (
   primary: #40c0c0,
+  primary-light: #afe2e3,
   secondary: #b0dfe1,
   dark: #003c5b
 );
+
+$primary: map-get($theme-colors, "primary");
+$secondary: map-get($theme-colors, "secondary");
+$primary-light: map-get($theme-colors, "primary-light");
+$dark: map-get($theme-colors, "dark");
 
 $font-family-sans-serif: "Barlow", sans-serif;
 $font-family-serif: "Playfair Display", serif;

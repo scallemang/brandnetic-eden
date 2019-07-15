@@ -132,3 +132,4 @@ add_action('after_setup_theme', function () {
 });
 
 add_image_size( 'landscape_hero_medium', 800, 400, TRUE );
+add_image_size( 'card_image', 630, 469, TRUE );

@@ -15,6 +15,22 @@ body .search-form .search-submit {
   }
 }
 
+.btn-outline {
+  color: $dark;
+  border-color: $dark;
+
+  &:hover {
+    background-color: $dark;
+    color: $white;
+  }
+}
+
 button.menu-toggler {
   background-color: transparent;
+}
+
+.text-center {
+  .btn {
+    margin-right: 0;
+  }
 }
