@@ -133,3 +133,10 @@ add_action('after_setup_theme', function () {
 
 add_image_size( 'landscape_hero_medium', 800, 400, TRUE );
 add_image_size( 'card_image', 630, 469, TRUE );
+add_image_size( 'featured_image', 1100, 640, TRUE );
+add_image_size( 'grid_md', 385, 500, TRUE );
+add_image_size( 'grid_sm', 293, 500, TRUE );
+add_image_size( 'grid_lg', 885 , 500, TRUE );
+add_image_size( 'grid_squarish', 590, 500, TRUE );
+add_image_size( 'portrait_large', 588, 784, TRUE );
+
