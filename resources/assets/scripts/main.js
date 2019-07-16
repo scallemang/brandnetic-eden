@@ -101,3 +101,12 @@ window.WebFontConfig = {
     $('body').removeClass('no-scroll');
   });
 })(jQuery);
+
+(function($) {
+  $('.eden-menu .dropdown-toggle').mouseenter(function() { 
+    $(this).click();
+  });
+  $('.eden-menu .dropdown-toggle').mouseleave(function() { 
+    $(this).click();
+  });
+})(jQuery);
