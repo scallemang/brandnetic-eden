@@ -44,7 +44,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Mobile Navigation', 'sage'),
+        'header-menu-left' => __( 'Header Menu 1 (L of logo)', 'sage' ),
+        'header-menu-right' => __( 'Header Menu 2 (R of logo)', 'sage' ),
     ]);
 
     /**
@@ -133,3 +135,10 @@ add_action('after_setup_theme', function () {
 
 add_image_size( 'landscape_hero_medium', 800, 400, TRUE );
 add_image_size( 'card_image', 630, 469, TRUE );
+add_image_size( 'featured_image', 1100, 640, TRUE );
+add_image_size( 'grid_md', 385, 500, TRUE );
+add_image_size( 'grid_sm', 293, 500, TRUE );
+add_image_size( 'grid_lg', 885 , 500, TRUE );
+add_image_size( 'grid_squarish', 590, 500, TRUE );
+add_image_size( 'portrait_large', 588, 784, TRUE );
+

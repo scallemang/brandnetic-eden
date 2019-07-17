@@ -6,7 +6,7 @@
 <div class="card">
   <p><strong>{{ get_the_date( 'F, j Y' ) }}</strong></p>
   @php
-    $image = get_the_post_thumbnail_url( get_the_ID(), 'card_image' );
+    $image = get_the_post_thumbnail_url( get_the_ID(), 'full' );
   @endphp
   @if( $image )
     <img src="{{ $image }}" class="img-fluid mb-4">

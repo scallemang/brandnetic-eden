@@ -1,0 +1,28 @@
+.wp-pagenavi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .nextpostslink,
+  .pages {
+    display: none;
+  }
+
+  a,
+  span.current {
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  a {
+    border-color: $primary !important;
+    color: $primary;
+  }
+
+  span.current {
+    border: 2px solid $dark;
+  }
+}

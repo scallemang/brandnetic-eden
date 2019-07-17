@@ -85,9 +85,14 @@ span.wpcf7-list-item:first-of-type {
   margin-left: 0;
 }
 
+form.wpcf7-form.demo,
 div.registration,
 form.registration,
 div.registration form {
+  text-align: left;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
   .custom-select {
     border-color: $border-color;
     border-width: 2px;

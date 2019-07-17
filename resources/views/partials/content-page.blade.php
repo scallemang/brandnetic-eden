@@ -23,10 +23,16 @@
       	@include('partials.blocks.block-recent-posts')
 
       @elseif( get_row_layout() == 'eden_map' )
-      	{{ the_sub_field( 'eden_block_map_type' ) }}
+      	@include('partials.blocks.block-map')
 
       @elseif( get_row_layout() == 'eden_divider' )
         @include('partials.blocks.block-divider')
+
+      @elseif( get_row_layout() == 'eden_finishes' )
+        @include('partials.blocks.block-finishes')
+
+      @elseif( get_row_layout() == 'eden_wysiwyg_columns' )
+        @include('partials.blocks.block-wysiwyg-columns')
 
       @endif
 
