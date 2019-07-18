@@ -20,7 +20,8 @@ div.modal {
     }
   }
 
-  &.modal-embed {
+  &.modal-embed,
+  &.modal-image {
     .print,
     .close {
       

@@ -65,15 +65,11 @@
 
 @if( !empty( $finishesModals ) )
   @foreach( $finishesModals as $modal )
-    <div class="modal fade" id="modal-{{ $modal['id'] }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+     <div class="modal fade modal-{{ $modal['type'] }}" id="modal-{{ $modal['id'] }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
           <div class="modal-body">
             
 
@@ -83,25 +79,16 @@
                   <div class="embed-responsive">
                     <a href="{{ $modal['url'] }}" target="_blank"><img src="{{ $modal['url'] }}" class="img-fluid" style="width: 100%" ></a>
                   </div>
-                  <div class="pdf-button">
-                    <a target="_blank" class="js-pdf-btn button" href="{{ $modal }}">Download PDF</a>
-                  </div>
-            <button class="close-button" data-close="" aria-label="Close modal" type="button">
-            <span aria-hidden="true">×</span>
-            </button>
+                  
+           
             </div></div>
 
-
-
-
-
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+
         </div>
       </div>
     </div>
+
+
   @endforeach
 @endif
