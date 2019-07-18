@@ -15,6 +15,7 @@
         </div>
       </div>
     </div>
+    <div class="bg-pattern"></div>
   </div>
   <div class="bg-secondary ">
     <div class="container clearfix container-fluid-md-down">

@@ -3,8 +3,8 @@ section.block-features {
 
   .grid-row {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 40px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     padding-bottom: 4rem;
 
     .content {
@@ -27,13 +27,13 @@ section.block-features {
     // Odd Rows
     &.grid-row-odd {
       .content {
-        grid-column: 1/6;
-        grid-row: 4/-1;
+        grid-column: 1/3;
+        grid-row: 7/-1;
         z-index: 10;
       }
 
       .img {
-        grid-column: 4/-1;
+        grid-column: 2/-1;
         grid-row: 1/11;
       }
     }
@@ -41,13 +41,13 @@ section.block-features {
     // Even Rows
     &.grid-row-even {
       .content {
-        grid-column: 8/-1;
-        grid-row: 4/-1;
+        grid-column: 3/-1;
+        grid-row: 7/-1;
         z-index: 10;
       }
 
       .img {
-        grid-column: 1/9;
+        grid-column: 1/4;
         grid-row: 1/11;
       }
     }

@@ -10,7 +10,7 @@
 
 @endphp
 
-<section class="block-wysiwyg bg-{{ $background }} padding-{{ $padding }} text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
+<section class="block-cta bg-{{ $background }} padding-{{ $padding }} text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
   <div class="container clearfix container-fluid-md-down">
     <div class="row">
       <div class="col-sm-12 col-lg-10 mx-lg-auto">
@@ -31,10 +31,11 @@
             @endif
 
             @if( $hasButton )
-              <div class="container my-4">
-              @if( get_sub_field( 'eden_block_button_group' )[ 'eden_button_text' ] && get_sub_field( 'eden_block_button_group' )['eden_button_link'] )
-                  <a id="" class="btn btn-primary" href="{{ get_sub_field( 'eden_block_button_group' )['eden_button_link'] }}">{{ get_sub_field( 'eden_block_button_group' )['eden_button_text'] }}</a>
-              @endif
+              @php $buttons = get_sub_field( 'eden_button_repeater' ); @endphp
+              <div class="container mt-5">
+                @foreach( $buttons as $button )
+                  <a id="" class="btn btn-outline" href="{{ $button[ 'eden_button_link' ]['url'] }}">{{ $button['eden_button_text'] }}</a>
+                @endforeach
               </div>
             @endif
 
@@ -43,4 +44,5 @@
       </div>
     </div>
   </div>
+  <div class="bg-pattern"></div>
 </section>

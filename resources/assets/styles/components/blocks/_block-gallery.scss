@@ -1,6 +1,16 @@
 section.block-gallery {
   .gallery-row .col-img img {
     border: 2px solid $primary-light;
+    background: white;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+  }
+
+  .logo--instagram {
+    max-width: 40px;
+    margin-right: .8rem;
   }
 
   .grid-row {

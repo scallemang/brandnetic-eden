@@ -82,12 +82,13 @@
                   break;
               }
             @endphp
-            <div class="{{ $colClass }} col-img">
+            <div class="{{ $colClass }} pb-3 col-img">
               <a href="#" @if( 'file' == $linkType ) data-toggle="modal" data-target="#modal-{{ $uniqueId }}" @else href="{{ $linkUrl }}" @endif ><img src="{{ $image['sizes']['medium'] }}" alt="{{ $image['alt'] }}" class="img-fluid"></a>
             </div>
             @if( 'file' == $linkType )
               @php 
-                $modals[] = array( 
+                $modals[] = array(
+                  'type' => 'embed',
                   'id'  => $uniqueId,
                   'url' => $linkUrl,
                 );
@@ -103,10 +104,19 @@
 
   {{-- Start of IG --}}
   @if( 'instagram' == $type )
+    <h3>Follow us on Instagram</h3>
+    <div class="hr-sm"></div>
+    <img src="@asset('images/eden-ig-profile.jpg')" class="profile-pic mb-3">
+    <p>Find us at @edenkelowna</p>
+    
     @php
       $code = get_sub_field( 'eden_instagram_carousel' )[ 'eden_instagram_shortcode' ];
       print do_shortcode( $code );
     @endphp
+    <div class="py-4">
+      <a href="{{ get_field( 'social__instagram', 'option' ) }}"><img src="@asset('images/Instagram_AppIcon_Aug2017.png')" class="logo--instagram"></a>
+      <a href="{{ get_field( 'social__instagram', 'option' ) }}" class="btn btn-outline">Follow Us</a>
+    </div>
   {{-- End of IG --}}
   @endif
 
@@ -173,45 +183,35 @@
     </div>
   @endif
   {{-- End of Grid --}}
+  <div class="bg-pattern"></div>
 </section>
 
 @if( !empty( $modals ) )
   @foreach( $modals as $modal )
-    <div class="modal fade" id="modal-{{ $modal['id'] }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade modal-{{ $modal['type'] }}" id="modal-{{ $modal['id'] }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          <a type="button" class="print" data-dismiss="modal" aria-label="Print">Print</a>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
           <div class="modal-body">
             
 
 
             <div class="reveal-overlay" style="display: block;">
               <div class="reveal" id="floorplan-modal" data-reveal="88ckrs-reveal" role="dialog" aria-hidden="false" data-yeti-box="floorplan-modal" data-resize="floorplan-modal" tabindex="-1" style="display: block; top: 51px;" data-events="resize">
-                  <div class="embed-responsive" style="padding-bottom:110%">
+                  <div class="embed-responsive">
                     <object id="pdf-viewer" data="{{ $modal['url'] }}" type="application/pdf" width="100%" height="100%" internalinstanceid="6"></object>
                   </div>
                   <div class="pdf-button">
                     <a target="_blank" class="js-pdf-btn button" href="{{ $modal }}">Download PDF</a>
                   </div>
-            <button class="close-button" data-close="" aria-label="Close modal" type="button">
+            <button class="btn btn-outline" data-close="" aria-label="Close modal" type="button">
             <span aria-hidden="true">×</span>
             </button>
             </div></div>
 
-
-
-
-
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+
         </div>
       </div>
     </div>

@@ -2,4 +2,11 @@ section.block-hero {
   @include media-breakpoint-up(lg) {
     padding-bottom: 100px !important;
   }
+  &.block-hero--image-only {
+    min-height: 340px;
+  }
+
+  h3 {
+    text-transform: none;
+  }
 }

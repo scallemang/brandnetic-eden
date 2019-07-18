@@ -1,6 +1,6 @@
 @php
   // $background = get_sub_field( 'eden_background_picker' );
-  $background = 'turquoise-light';
+  $background = 'primary-light';
   // $padding = get_sub_field( 'eden_padding_picker' );
   $padding = 'large';
   //$alignment = get_sub_field( 'eden_text_alignment_picker' );
@@ -15,13 +15,13 @@
 
 @endphp
 
-<section class="block-wysiwyg bg-{{ $background }} padding-{{ $padding }} text-{{ $alignment }}">
+<section class="block-post-header bg-{{ $background }} padding-{{ $padding }} text-{{ $alignment }}">
   <div class="container clearfix container-fluid-md-down">
     <div class="row">
       <div class="col-sm-12 col-lg-10 mx-lg-auto">
         <div class="container">
           <div class="eden-copy-sm">
-              <p>{{ $date }}</p>
+              <h4>{{ $date }}</h4>
               <div class="hr-sm"></div>
               <h2>{{ $title }}</h2>
 

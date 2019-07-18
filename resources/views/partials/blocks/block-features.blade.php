@@ -1,5 +1,10 @@
+@php
+  $paddingExtra = get_sub_field( 'eden_features_negative_margin_bottom' );
+@endphp
+
+
 @if( have_rows('eden_features_repeater') )
-  <section class="block-features bg-floral">
+  <section class="block-features bg-floral @if($paddingExtra) negative-bottom-margin @endif">
     @while( have_rows('eden_features_repeater') ) @php the_row(); @endphp
       @php
         $background = get_sub_field( 'eden_background_picker' );
@@ -20,7 +25,7 @@
             @if( $hasButton )
               <div class="pt-4">
                 @if( get_sub_field( 'eden_block_button_group' )[ 'eden_button_text' ] && get_sub_field( 'eden_block_button_group' )['eden_button_link'] )
-                    <a id="" class="btn btn-outline" href="{{ get_sub_field( 'eden_block_button_group' )['eden_button_link'] }}">{{ get_sub_field( 'eden_block_button_group' )['eden_button_text'] }}</a>
+                    <a id="" class="btn btn-outline" href="{{ get_sub_field( 'eden_block_button_group' )['eden_button_link']['url'] }}">{{ get_sub_field( 'eden_block_button_group' )['eden_button_text'] }}</a>
                 @endif
               </div>
             @endif
@@ -37,5 +42,6 @@
       </div>
 
     @endwhile
+    <div class="bg-pattern"></div>
   </section>
 @endif

@@ -40,4 +40,5 @@
       </div>
     </div>
   </div>
+  <div class="bg-pattern"></div>
 </section>

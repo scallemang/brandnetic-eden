@@ -1,7 +1,7 @@
 <footer class="content-info eden-copy-sm">
   <div class="container">
   	<div class="row">
-  		<div class="col-md-11 offset-md-1 offset-lg-0 col-lg-7">
+  		<div class="col-md-11 offset-md-1 offset-lg-0 col-lg-8 col-xl-7">
   			<h4>Another Fortune Marketing Project</h4>
         <p class="t-uppercase mb-0">EDEN Property Specialists</p>
   			<div class="row">
@@ -25,7 +25,7 @@
           </div>
     		</div>
       </div>
-      <div class="col-md-11 offset-md-1 offset-lg-0 col-lg-5">
+      <div class="col-md-11 offset-md-1 offset-lg-0 col-lg-4 col-xl-5">
         <div class="partner-logos">
           <ul>
             <li><a href="http://edenkelowna.com"><img src="@asset('images/Asset_7Eden.svg')" alt="Eden logo"></a></li>

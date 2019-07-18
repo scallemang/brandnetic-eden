@@ -47,4 +47,5 @@ var register = function(jQuery) {
       </div>
     </div>
   </div>
+  <div class="bg-pattern"></div>
 </div>

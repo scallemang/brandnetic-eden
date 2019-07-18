@@ -1,0 +1,78 @@
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin-top: 2.75rem;
+  }
+}
+
+div.modal {
+  button {
+    background: transparent;
+    border:  none;
+  }
+
+  &.modal-embed {
+    .print,
+    .close {
+      
+      position: absolute;
+      display: block;
+      top: -24px;
+      z-index: 10;
+      font: $font-family-condensed;
+      font-size: 18px;
+      line-height: 1.2em;
+      font-weight: 700;
+      color: $white;
+      text-shadow: none;
+      opacity: 1;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .print {
+      left: 0;
+      padding-left: 24px;
+
+      &::before {
+        background: url("../images/icon--print.svg");
+        height: 18px;
+        width: 16px;
+        left: 0;
+
+      }
+    }
+    .close {
+      padding-right: 24px;
+      right: 0;
+
+      &::before {
+        background: url("../images/icon--close.svg");
+        height: 16px;
+        width: 16px;
+        right: 0;
+      }
+    }
+    .embed-responsive {
+      padding-bottom: 110%;
+    }
+  }
+
+  .modal-content {
+    border: none;
+    background: transparent;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}

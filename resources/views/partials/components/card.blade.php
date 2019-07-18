@@ -11,7 +11,7 @@
   @if( $image )
     <img src="{{ $image }}" class="img-fluid mb-4">
   @endif
-	<h1 class="card__title">{{ $title }}</h1>
+	<h1 class="card__title"><a id="" class="" href="{{ get_the_permalink() }}">{{ $title }}</a></h1>
 	<div class="mb-5">{{ $cardContent }}</div>
   <div class="mt-auto">
     <a id="" class="btn btn-outline" href="{{ get_the_permalink() }}">Keep Reading</a>

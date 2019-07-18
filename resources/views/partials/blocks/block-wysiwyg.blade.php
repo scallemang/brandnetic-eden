@@ -33,7 +33,7 @@
             @if( $hasButton )
               <div class="container my-4">
               @if( get_sub_field( 'eden_block_button_group' )[ 'eden_button_text' ] && get_sub_field( 'eden_block_button_group' )['eden_button_link'] )
-                  <a id="" class="btn btn-primary" href="{{ get_sub_field( 'eden_block_button_group' )['eden_button_link'] }}">{{ get_sub_field( 'eden_block_button_group' )['eden_button_text'] }}</a>
+                  <a id="" class="btn btn-primary" href="{{ get_sub_field( 'eden_block_button_group' )['eden_button_link']['url'] }}">{{ get_sub_field( 'eden_block_button_group' )['eden_button_text'] }}</a>
               @endif
               </div>
             @endif
@@ -43,4 +43,5 @@
       </div>
     </div>
   </div>
+  <div class="bg-pattern"></div>
 </section>
