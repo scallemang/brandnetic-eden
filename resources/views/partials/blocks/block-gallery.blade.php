@@ -83,7 +83,7 @@
               }
             @endphp
             <div class="{{ $colClass }} pb-3 col-img">
-              <a href="#" @if( 'file' == $linkType ) data-toggle="modal" data-target="#modal-{{ $uniqueId }}" @else href="{{ $linkUrl }}" @endif ><img src="{{ $image['sizes']['medium'] }}" alt="{{ $image['alt'] }}" class="img-fluid"></a>
+              <a href="#" @if( 'file' == $linkType ) data-toggle="modal" data-target="#modal-{{ $uniqueId }}" @else href="{{ $linkUrl }}" @endif ><img src="@if( 'one' == $columns ){{ $image['url'] }}@else{{ $image['sizes']['medium'] }}@endif" alt="{{ $image['alt'] }}" class="img-fluid"></a>
             </div>
             @if( 'file' == $linkType )
               @php 
@@ -191,7 +191,7 @@
     <div class="modal fade modal-{{ $modal['type'] }}" id="modal-{{ $modal['id'] }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <a type="button" class="print" data-dismiss="modal" aria-label="Print">Print</a>
+          <a href="{{ $modal['url'] }}" class="print" target="_blank" aria-label="Print">Print</a>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
           <div class="modal-body">
             
@@ -202,12 +202,10 @@
                   <div class="embed-responsive">
                     <object id="pdf-viewer" data="{{ $modal['url'] }}" type="application/pdf" width="100%" height="100%" internalinstanceid="6"></object>
                   </div>
-                  <div class="pdf-button">
-                    <a target="_blank" class="js-pdf-btn button" href="{{ $modal }}">Download PDF</a>
+                  <div class="pdf-button text-center">
+                    <a target="_blank" class="btn btn-outline my-4" href="{{ $modal['url'] }}" target="_blank" download>Download PDF</a>
                   </div>
-            <button class="btn btn-outline" data-close="" aria-label="Close modal" type="button">
-            <span aria-hidden="true">×</span>
-            </button>
+           
             </div></div>
 
           </div>

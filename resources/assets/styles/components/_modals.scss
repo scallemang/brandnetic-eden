@@ -10,6 +10,16 @@ div.modal {
     border:  none;
   }
 
+  .btn {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      background: $white;
+      color: $dark;
+    }
+  }
+
   &.modal-embed {
     .print,
     .close {
