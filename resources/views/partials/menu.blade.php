@@ -8,9 +8,7 @@
         <span class="menu-toggler-icon"></span>
       </button>
 
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
+     
       {{-- <button type="button" class="btn btn-outline-primary px-4">Menu</button> --}}
       @if( get_field( 'site__alt_logo', 'option' ) ) 
 		@php $image = get_field( 'site__alt_logo', 'option' ); @endphp
@@ -24,14 +22,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 menu-items">
-          <ul>
+          {{-- <ul>
             <li class="t-condensed t-uppercase"><a href="#">Register</a></li>
             <li class="t-condensed t-uppercase"><a href="#">Location</a></li>
             <li class="t-condensed t-uppercase"><a href="#">Floorplans</a></li>
             <li class="t-condensed t-uppercase"><a href="#">Design & Features</a></li>
             <li class="t-condensed t-uppercase"><a href="#">Amenities</a></li>
             <li class="t-condensed t-uppercase"><a href="#">Team</a></li>
-          </ul>
+          </ul> --}}
+           @if (has_nav_menu('primary_navigation'))
+            {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav t-uppercase t-condensed']) !!}
+          @endif
         </div>
         <div class="col-lg-4">
           <div class="row">

@@ -88,6 +88,18 @@ window.WebFontConfig = {
 })(jQuery);
 
 (function($) {
+  $('.cta-buttons a').click(function(){
+    $('html, body').animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top,
+      },
+      350,
+      'linear'
+    )
+  });
+})(jQuery);
+
+(function($) {
   $('.navbar-toggler').click(function(){
     $('html, body').animate({ 
       scrollTop: 0,

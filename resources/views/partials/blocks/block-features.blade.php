@@ -1,10 +1,13 @@
 @php
-  $paddingExtra = get_sub_field( 'eden_features_negative_margin_bottom' );
+  $negativeBottom = get_sub_field( 'eden_features_negative_margin_bottom' );
+  $negativeTop = get_sub_field( 'eden_features_negative_margin_top' );
+  $sectionId = get_sub_field( 'eden_section_id' );
 @endphp
 
 
 @if( have_rows('eden_features_repeater') )
-  <section class="block-features bg-floral @if($paddingExtra) negative-bottom-margin @endif">
+  <section @if($sectionId)id="{{ $sectionId }}"@endif class="block-features bg-floral @if($negativeBottom) 
+  negative-bottom-margin @endif @if($negativeTop) negative-top-margin @endif">
     @while( have_rows('eden_features_repeater') ) @php the_row(); @endphp
       @php
         $background = get_sub_field( 'eden_background_picker' );

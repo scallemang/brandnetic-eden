@@ -4,9 +4,10 @@
 
   $title = get_sub_field( 'eden_block_title' );
   $finishes = get_sub_field( 'eden_finishes_repeater' );
+  $sectionId = get_sub_field( 'eden_section_id' );
 @endphp
 
-<section class="block-finishes bg-{{ $background }} py-5 text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
+<section @if($sectionId)id="{{ $sectionId }}"@endif class="block-finishes bg-{{ $background }} py-5 text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
   <div class="container clearfix container-fluid-md-down">
     <div class="row">
       <div class="col-sm-12">
@@ -79,7 +80,9 @@
                   <div class="embed-responsive">
                     <a href="{{ $modal['url'] }}" target="_blank"><img src="{{ $modal['url'] }}" class="img-fluid" style="width: 100%" ></a>
                   </div>
-                  
+                  <div class="pdf-button text-center">
+                    <a target="_blank" class="btn btn-outline my-4" href="{{ $modal['url'] }}" target="_blank" download>Download</a>
+                  </div>
            
             </div></div>
 

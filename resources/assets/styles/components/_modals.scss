@@ -1,7 +1,5 @@
-@media (min-width: 576px) {
-  .modal-dialog {
-    margin-top: 2.75rem;
-  }
+.modal-dialog {
+  margin-top: 2.75rem;
 }
 
 div.modal {
@@ -17,6 +15,22 @@ div.modal {
     &:hover {
       background: $white;
       color: $dark;
+    }
+  }
+
+  &.modal-embed {
+    .embed-responsive {
+      padding-bottom: 110%;
+    }
+
+    .modal-dialog {
+      @include media-breakpoint-up(md) {
+        max-width: 700px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: 800px;
+      }
     }
   }
 
@@ -68,9 +82,6 @@ div.modal {
         width: 16px;
         right: 0;
       }
-    }
-    .embed-responsive {
-      padding-bottom: 110%;
     }
   }
 

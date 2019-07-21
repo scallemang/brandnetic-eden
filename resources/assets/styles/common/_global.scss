@@ -171,8 +171,8 @@ h2.eden-display-1,
 h3.eden-display-1 {
   font-family: $font-family-serif;
   color: map-get($theme-colors, dark);
-  font-size: 30px;
-  line-height: 36px;
+  // font-size: 30px;
+  // line-height: 36px;
 
   @include media-breakpoint-up(md) {
     // font-size: 60px;

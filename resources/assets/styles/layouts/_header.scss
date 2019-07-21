@@ -143,8 +143,9 @@ header:not(.post-header) {
 }
 
 div.full-menu {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  // padding-top: 140px;
+  // padding-bottom: 140px;
+  padding: 2rem 0;
 
   .menu-items {
     margin-bottom: 44px;
@@ -223,7 +224,7 @@ div.eden-menu {
       background: transparent;
       padding-top: 0;
       margin-top: -14px;
-      font-size: 0.9em;
+      font-size: 0.85em;
 
       &:before {
         content: '';
@@ -234,6 +235,12 @@ div.eden-menu {
         position: absolute;
         left: 10%;
         display: block;
+      }
+    }
+
+    li > a {
+      &:hover {
+        color: $dark;
       }
     }
 
@@ -292,6 +299,14 @@ div.eden-menu {
 
     &:last-of-type {
       grid-column: 4/-1;
+    }
+  }
+}
+
+div.full-menu {
+  ul#menu-mobile-menu {
+    li {
+      width: 100%;
     }
   }
 }

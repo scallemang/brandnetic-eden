@@ -1,5 +1,7 @@
 section {
   &.padding-large {
+    padding: 2rem 0;
+
     @include media-breakpoint-up(md) {
       padding: 4rem 0;
     }
@@ -10,6 +12,8 @@ section {
   }
 
   &.padding-large-top {
+    padding: 2rem 0;
+
     @include media-breakpoint-up(md) {
       padding: 4rem 0 2rem;
     }

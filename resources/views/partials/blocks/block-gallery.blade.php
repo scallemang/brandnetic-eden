@@ -3,6 +3,7 @@
   $padding = get_sub_field( 'eden_padding_picker' );
   // $alignment = get_sub_field( 'eden_text_alignment_picker' );
   // $paddingExtra = get_sub_field( 'eden_extra_padding-bottom' );
+  $sectionId = get_sub_field( 'eden_section_id' );
 
   // $title = get_sub_field( 'eden_block_title' );
   // $content = get_sub_field( 'eden_block_wysiwyg' );
@@ -10,7 +11,7 @@
 
 @endphp
 
-<section class="block-gallery padding-{{ $padding }} text-center bg-{{ $background }}"> 
+<section @if($sectionId)id="{{ $sectionId }}"@endif class="block-gallery padding-{{ $padding }} text-center bg-{{ $background }}"> 
   @php
     $type = get_sub_field( 'eden_gallery_type' );
   @endphp
@@ -163,7 +164,7 @@
             @endif
 
             <div class="col-img @if( 'grid_squarish' == $size ) grid_md @else {{ $size }} @endif">
-              <img src="{{ $gridImage[ 'sizes' ][ $size ] }}" class="img">
+              <img src="{{ $gridImage[ 'sizes' ][ $size ] }}" class="img img-fluid">
               @if( $i < $loop )
                 @php $i++; @endphp
               @else

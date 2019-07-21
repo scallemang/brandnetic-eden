@@ -1,7 +1,11 @@
 footer {
   background-color: map-get($theme-colors, dark);
   color: $white;
-  padding: 78px 44px 234px;
+  padding: 1em 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 78px 44px 234px;
+  }
 
   .v-line {
     display: none;
@@ -19,6 +23,8 @@ footer {
     line-height: 36px;
     font-weight: 700;
     margin-bottom: 0.8rem;
+    color: $white;
+    font-family: $font-family-sans-serif;
   }
 
   p.fine-print {

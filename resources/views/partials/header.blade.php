@@ -8,11 +8,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      {{-- @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif --}}
-      {{-- <button type="button" class="btn btn-outline-primary px-4">Menu</button> --}}
-
       @if( has_nav_menu( 'header-menu-left' ) )
         @php
           wp_nav_menu( array(
@@ -27,7 +22,7 @@
 
       @if( get_field( 'site__logo', 'option' ) ) 
     		@php $image = get_field( 'site__logo', 'option' ); @endphp
-      		<a class="navbar-brand mx-auto" href="#"><div id="logo">
+      		<a class="navbar-brand mx-auto" href="{{ get_home_url() }}"><div id="logo">
       			<img src="{{ $image['sizes']['large'] }}" alt="{{ $image['alt'] }}" class="img-fluid site-logo">
       		</div></a>
       @endif

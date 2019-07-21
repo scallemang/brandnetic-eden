@@ -3,6 +3,7 @@
   $padding = get_sub_field( 'eden_padding_picker' );
   $alignment = get_sub_field( 'eden_text_alignment_picker' );
   $paddingExtra = get_sub_field( 'eden_extra_padding-bottom' );
+  $sectionId = get_sub_field( 'eden_section_id' );
 
   $title = get_sub_field( 'eden_block_title' );
   $contentOne = get_sub_field( 'eden_column_one' );
@@ -10,7 +11,7 @@
 
 @endphp
 
-<section class="block-wysiwyg-columns bg-{{ $background }} padding-{{ $padding }} text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
+<section @if($sectionId)id="{{ $sectionId }}"@endif class="block-wysiwyg-columns bg-{{ $background }} padding-{{ $padding }} text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
   <div class="container clearfix container-fluid-md-down">
     <div class="row">
       <div class="col-sm-12">
