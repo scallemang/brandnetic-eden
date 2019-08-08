@@ -1,6 +1,10 @@
 section.block-hero {
   position: relative;
 
+  h1 {
+    font-weight: bold;
+  }
+
   &:not(.block-hero--image-only) {
     &::before {
       content: '';
@@ -10,7 +14,7 @@ section.block-hero {
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba($white, 0.5);
+      background: rgba($white, 0.7);
     }
   }
 
