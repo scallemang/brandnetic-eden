@@ -11,8 +11,7 @@
           </div>
           <div class="v-line"></div>
           <div class="col-eden col-eden-md-6 col-eden-lg-4">
-            <p>Open M-F, 9-5<br>
-            305 Lawrence Ave, Kelowna</p>
+            <p>edenkelowna.com</p>
           </div>
           <div class="col-sm-12">
             <div class="social-icons">
