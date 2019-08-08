@@ -23,6 +23,7 @@ $recent = new WP_Query( $args );
         <div class="row">
           @while($recent->have_posts()) @php $recent->the_post() @endphp
             <div class="col-md-6 pb-4">
+              @php $title = null; @endphp
               @include('partials.components.card')
             </div>
           @endwhile

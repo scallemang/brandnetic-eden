@@ -24,6 +24,7 @@
             <div class="row">
               @while($featured->have_posts()) @php $featured->the_post() @endphp
                 <div class="col-sm-12">
+                  @php $title = null; @endphp
                   @include('partials.components.card-large')
                 </div>
               @endwhile
@@ -55,6 +56,7 @@
           <div class="row pb-5">
             @while($posts->have_posts()) @php $posts->the_post() @endphp
               <div class="col-md-6 pb-5">
+                @php $title = null; @endphp
                 @include('partials.components.card')
               </div>
             @endwhile

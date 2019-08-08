@@ -10,15 +10,15 @@ section.block-hero {
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba($white, 0.8);
+      background: rgba($white, 0.5);
     }
   }
 
-  @include media-breakpoint-up(lg) {
-    &::before {
-      display: none;
-    }
-  }
+  // @include media-breakpoint-up(lg) {
+  //   &::before {
+  //     display: none;
+  //   }
+  // }
 
   @include media-breakpoint-up(lg) {
     padding-bottom: 100px !important;
