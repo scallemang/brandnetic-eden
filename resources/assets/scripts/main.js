@@ -26,7 +26,7 @@ jQuery(document).ready(() => routes.loadEvents());
 
 window.WebFontConfig = {
       google: { 
-        families: [ 'Barlow:400,700:latin','Barlow+Condensed:400,700:latin','Playfair+Display:400:latin' ],
+        families: [ 'Barlow:400,700:latin','Barlow+Condensed:400,700:latin','Playfair+Display:400:latin,700:latin' ],
       },
 };
 (function() {

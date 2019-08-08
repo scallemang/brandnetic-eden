@@ -1,6 +1,10 @@
 section.block-hero {
   position: relative;
 
+  h1 {
+    font-weight: bold;
+  }
+
   &:not(.block-hero--image-only) {
     &::before {
       content: '';
@@ -10,13 +14,15 @@ section.block-hero {
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba($white, 0.8);
-
-      @include media-breakpoint-up(xl) {
-        display: none;
-      }
+      background: rgba($white, 0.65);
     }
   }
+
+  // @include media-breakpoint-up(lg) {
+  //   &::before {
+  //     display: none;
+  //   }
+  // }
 
   @include media-breakpoint-up(lg) {
     padding-bottom: 100px !important;
