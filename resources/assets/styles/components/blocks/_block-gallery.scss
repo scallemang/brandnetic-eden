@@ -24,6 +24,10 @@ section.block-gallery {
   .grid-row {
     display: block;
 
+    .img-fluid {
+      max-width: none;
+    }
+
     @include media-breakpoint-up(md) {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
