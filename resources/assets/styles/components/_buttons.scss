@@ -1,6 +1,19 @@
+body .header__btn {
+  display: flex;
+  align-items: center;
+
+  a {
+    @extend .btn;
+    @extend .btn-primary;
+
+    color: $white;
+  }
+}
+
 body .btn,
 body .comment-form input[type="submit"],
-body .search-form .search-submit {
+body .search-form .search-submit,
+body .header__btn a {
   border-radius: 0;
   text-transform: uppercase;
   font: $font-family-condensed !important;
