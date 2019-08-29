@@ -308,3 +308,11 @@ div.eden-copy-sm p {
   width: 205px;
   margin: 2rem auto;
 }
+
+body.single-post {
+  .entry-content {
+    img {
+      max-width: 100%;
+    }
+  }
+}

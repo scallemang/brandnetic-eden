@@ -34,7 +34,7 @@ section.block-hero {
 
   @include media-breakpoint-up(lg) {
     &.block-hero--image-only {
-      min-height: 340px;
+      min-height: 400px;
     }
   }
 
