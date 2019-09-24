@@ -5,8 +5,10 @@
   $title = get_sub_field( 'eden_block_title' );
   $finishes = get_sub_field( 'eden_finishes_repeater' );
   $sectionId = get_sub_field( 'eden_section_id' );
-@endphp
 
+  $hide = get_sub_field( 'eden_block_hide' );
+@endphp
+@if(!$hide)
 <section @if($sectionId)id="{{ $sectionId }}"@endif class="block-finishes bg-{{ $background }} py-5 text-{{ $alignment }}@if($paddingExtra) padding-{{ $padding }}-extra @endif">
   <div class="container clearfix container-fluid-md-down">
     <div class="row">
@@ -94,4 +96,6 @@
 
 
   @endforeach
+@endif
+
 @endif
