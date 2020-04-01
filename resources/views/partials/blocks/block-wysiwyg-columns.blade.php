@@ -13,7 +13,7 @@
 
   switch( $number ) {
     case 'three':
-      $cols = 'col-lg-4';
+      $cols = 'col-md-4';
       break;
     case 'two':
     default:
