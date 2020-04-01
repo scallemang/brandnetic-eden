@@ -307,3 +307,83 @@ div.eden-copy-sm p {
   width: 205px;
   margin: 2rem auto;
 }
+
+.eden-copy-lg,
+p.eden-copy-lg,
+div.eden-copy-lg p,
+.eden-copy-sm,
+p.eden-copy-sm,
+div.eden-copy-sm p {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.row-cta {
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
+}
+
+.t-uppercase {
+  text-transform: uppercase;
+}
+
+[class*="col-eden"] {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &.col-eden-md-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    &.col-eden-md-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.col-eden-lg-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+  }
+}
+
+// @include media-breakpoint-up(lg) {
+//   .container {
+//     max-width: 988px !important;
+//   }
+// }
+
+.px-sm-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.hr-sm {
+  border-top: 1px solid map-get($theme-colors, "dark");
+  border-bottom: 1px solid map-get($theme-colors, "dark");
+  width: 205px;
+  margin: 2rem auto;
+}
+
+body.single-post {
+  .entry-content {
+    img {
+      max-width: 100%;
+    }
+  }
+}
