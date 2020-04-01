@@ -1,0 +1,43 @@
+.wp-pagenavi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .nextpostslink,
+  .pages {
+    display: none;
+  }
+
+  a,
+  span.current {
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  a {
+    border-color: $primary !important;
+    color: $primary;
+  }
+
+  span.current {
+    border: 2px solid $dark;
+  }
+}
+
+.entry-content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  p {
+    color: map-get($theme-colors, dark);
+  }
+
+  > p:first-of-type {
+    font-family: $font-family-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+}

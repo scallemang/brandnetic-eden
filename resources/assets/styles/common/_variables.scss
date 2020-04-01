@@ -3,13 +3,32 @@
 
 $theme-colors: (
   primary: #40c0c0,
+  primary-light: #afe2e3,
   secondary: #b0dfe1,
-  dark: #003c5b
+  dark: #003c5b,
+  light: #f0faf9,
 );
+
+$primary: map-get($theme-colors, "primary");
+$secondary: map-get($theme-colors, "secondary");
+$primary-light: map-get($theme-colors, "primary-light");
+$dark: map-get($theme-colors, "dark");
 
 $font-family-sans-serif: "Barlow", sans-serif;
 $font-family-serif: "Playfair Display", serif;
 $font-family-condensed: "Barlow Condensed", sans-serif;
+
+.btn {
+  font-family: $font-family-condensed;
+
+  &.btn-primary {
+    color: white;
+  }
+}
+
+.t-condensed {
+  font-family: $font-family-condensed !important;
+}
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;

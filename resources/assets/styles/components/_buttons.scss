@@ -1,0 +1,36 @@
+body .btn,
+body .comment-form input[type="submit"],
+body .search-form .search-submit {
+  border-radius: 0;
+  text-transform: uppercase;
+  font: $font-family-condensed !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 10px 42px;
+  margin-right: 42px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.1rem;
+    padding: 6px 26px;
+  }
+}
+
+.btn-outline {
+  color: $dark;
+  border-color: $dark;
+
+  &:hover {
+    background-color: $dark;
+    color: $white;
+  }
+}
+
+button.menu-toggler {
+  background-color: transparent;
+}
+
+.text-center {
+  .btn {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,82 @@
+section.block-features {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+  .grid-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 2rem;
+
+    .content {
+      grid-row: 2;
+      padding: 2rem;
+    }
+
+    .img {
+      grid-row: 1/2;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    &.negative-top-margin {
+      padding-top: 0;
+    }
+
+    .grid-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      padding-bottom: 4rem;
+      margin-bottom: 0;
+
+      .content {
+        padding: 3rem 3rem 4rem;
+        display: flex;
+        flex-direction: column;
+
+        *:last-child {
+          margin-top: auto;
+        }
+      }
+
+      &:first-of-type {
+        @include media-breakpoint-up(lg) {
+          transform: translateY(-50px);
+          margin-bottom: -50px;
+        }
+      }
+
+      // Odd Rows
+      &.grid-row-odd {
+        .content {
+          grid-column: 1/3;
+          grid-row: 7/-1;
+          z-index: 10;
+        }
+
+        .img {
+          grid-column: 2/-1;
+          grid-row: 1/11;
+        }
+      }
+
+      // Even Rows
+      &.grid-row-even {
+        .content {
+          grid-column: 3/-1;
+          grid-row: 7/-1;
+          z-index: 10;
+        }
+
+        .img {
+          grid-column: 1/4;
+          grid-row: 1/11;
+        }
+      }
+    }
+  }
+}
