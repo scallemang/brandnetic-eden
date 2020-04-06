@@ -3,3 +3,8 @@
     width: 150px;
   }
 }
+
+.header__btn a {
+  background-color: map-get($theme-colors, primary);
+  color: $white !important;
+}
